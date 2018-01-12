@@ -1,0 +1,10 @@
+# Requirements
+
+# Requirements of requirements
+-c constraints.txt
+
+# Enforce code style
+flake8==3.5.0
+
+# Pretty-print ASCII tables
+prettytable==0.7.2
