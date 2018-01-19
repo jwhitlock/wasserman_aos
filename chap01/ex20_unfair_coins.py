@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 """
 You have five coins, with these chances of heads:
 
@@ -88,7 +88,7 @@ def run_trials(number):
         'heads2': Counter(),
         'heads5': Counter(),
     }
-    for i in xrange(number):
+    for i in range(number):
         coin, heads = sample_coin()
         counts['picked'][coin] += 1
         if heads:

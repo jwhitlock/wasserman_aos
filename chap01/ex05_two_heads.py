@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 """
 Suppose we toss a fair coin until we get exactly two heads. What is the
 probability that exactly k tosses are required?
@@ -24,7 +24,7 @@ def sample_k():
 def run_trials(number):
     '''Return count of flips to get to 2 heads over (number) trials'''
     counts = Counter()
-    for i in xrange(number):
+    for i in range(number):
         counts[sample_k()] += 1
     return counts
 
@@ -41,7 +41,7 @@ def show_error(number):
     table = PrettyTable(('k', 'Predicted', 'Actual', 'Error%'))
     table.float_format = '0.1'
     table.align = 'r'
-    for i in xrange(1, max_k+1):
+    for i in range(1, max_k+1):
         predict = predict_pk(i, number)
         actual = trials[i]
         if predict:

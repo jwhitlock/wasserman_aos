@@ -8,3 +8,6 @@ flake8==3.5.0
 
 # Pretty-print ASCII tables
 prettytable==0.7.2
+
+# Graphics plotting
+matplotlib==2.1.1

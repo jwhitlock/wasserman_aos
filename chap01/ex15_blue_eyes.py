@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 """
 Chance of blue eyes is 1/4, and independent. Consider a family of 3 kids:
 
@@ -41,7 +41,7 @@ def youngest_plus_one():
 def run_trials(number):
     '''Return count of flips to get to 2 heads over (number) trials'''
     counts = Counter()
-    for i in xrange(number):
+    for i in range(number):
         if at_least_one():
             counts['at_least_one'] += 1
         if youngest_plus_one():
